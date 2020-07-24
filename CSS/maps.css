@@ -1,0 +1,187 @@
+.map{
+    position: relative;
+    width: 100%;
+}
+.map .type{
+    position: relative;
+    height: 50px;
+    width: 25%;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black;
+    border-radius:  8em 3em / 3em 8em;
+    transition: border-radius 0.5s;
+    box-shadow: 2px 2px 2px black;
+}
+.map .type:hover{
+    border-radius:  3em 8em / 8em 3em;
+}
+.map .type:hover span{
+    border-radius:  3em 8em / 8em 3em;
+    text-shadow: 0px 0px 5px yellow;
+}
+.map .type span{
+    font-size: 3vw;
+    font-family: Chalisa Octavia;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px red;
+}
+.map .content {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    top: 0;
+    overflow: hidden;
+    background-color: white;
+}
+.map .content .photo{
+    width: 50%;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.map .content .photo img{
+    width: 100%;
+    transition: transform 2s;
+    border-radius: 10px;
+    height: 100%;
+}
+.map .content .photo:hover img{
+    transform: scale(4);
+}
+.map .content .descript{
+    position: relative;
+    top: 42px;
+    left: 12%;
+}    
+.map .content .descript span{
+    display: table;
+    width: 20%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    background: rgba(195,167,136,0.7);
+    text-shadow: 3px 3px 5px rgb(195,104,136);
+    border-radius: 15px;
+}
+.map .content .descript span.title{
+    font-family: NORTHEN;
+    font-size: 18pt;
+}
+.map .content .descript span.description{
+    font-family: Awesome Season;
+}
+.map .content .descript span:hover{
+    background: rgba(136,167,195,0.7);
+    text-shadow: 3px 3px 5px rgb(104,195,136);
+}
+
+@media only screen and (max-width:1000px){
+    .map .type{
+        width: 35%;
+        padding: 18px;
+    } 
+    .map .type span{
+        font-size: 4vw;
+    }
+    .map .content .photo{
+        width: 70%;
+    }
+    .map .content .descript{
+        position: relative;
+        top: 24px;
+        left: 0%;
+    } 
+    .map .content .descript span{
+        width:20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width:770px){
+    .map .type{
+        width: 45%;
+        padding: 17px;
+    }
+    .map .type span{
+        font-size: 5vw;
+    }
+    .map .content .photo{
+        width: 60%;
+    }
+    .map .content .descript{
+        top: 12px;
+    } 
+    .map .content .descript span{
+        width:30%;
+    }
+}
+
+@media only screen and (max-width:656px){
+    .map .type{
+        width: 55%;
+        padding: 15px;
+    }
+    .map .type span{
+        font-size: 6vw;
+    }
+    .map .content .photo{
+        width: 50%;
+    }
+    .map .content .descript span{
+        width:40%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .map .type{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .map .type{
+        width: 70%;
+    }
+    .map .type span{
+        font-size: 8vw;
+    }
+    .map .content .photo{
+        width: 55%;
+    }
+    .map .content .descript{
+        top: 10px;
+    }
+    .map .content .descript span{
+        width:35%;
+    }
+
+}
+@media only screen and (max-width:450px){
+    .map .type{
+        width: 80%;
+    }
+    .map .type span{
+        font-size: 10vw;
+    } 
+    .map .content .photo{
+        width: 100%;
+        clear: both;
+        margin: 0;
+        overflow: visible;
+    }
+    .map .content .photo:hover img{
+        transform: scale(1);
+    }
+    .map .content .descript span{
+        width: 80%;
+
+    }
+    
+}

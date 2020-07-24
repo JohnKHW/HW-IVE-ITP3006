@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--title icon-->
+    <link rel="icon" href="images/icon.png">
+    <!--link to the css code of header and footer-->
+    <link rel="stylesheet" href="CSS/headFoot.css">
+    <!--link to the css code of Heros-->
+    <link rel="stylesheet" href="CSS/hero.css">
+    <!--link to the css code of custom font-->
+    <link rel="stylesheet" href="CSS/font-family.css">
+    <!--media icon(css icon library)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Heros | League Of Legends</title>
+</head>
+<body>
+    <!--Sticky Menu Bar Item-->
+    <div id="header">
+        <div id="small_header">
+            <img src="images/logo.png">
+            <span onclick="smallbar()">&#9776</span>
+        </div>
+        <div id="menu_bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+            <span>|</span>
+            <ul>
+                <li>
+                    <a href="">News</a>
+                    <ul class="sub">
+                        <li><a href="Heros.html">Heros</a></li>
+                        <li><a href="Maps.html">Maps</a></li>
+                        <li><a href="Update.html">Update</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span>|</span>
+            <ul>
+                <li>
+                    <a href="">Service</a>
+                    <ul class="sub">
+                        <li><a href="Member.html">Member</a></li>
+                        <li><a href="Game.html">Game</a></li>
+                        <li><a href="Support.html">Support</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <span>|</span>
+            <div id="search" onmousemove="toSearch()" onmouseout="toImage()">
+                <img id="searchPic" src="images/search.png" >
+                <input id="searchField" type="search" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <!--Container of Heros Icon-->
+    <div class="body">
+        <div class="container_heros">
+            <ul>
+                <li>
+                    <a href="Heros/amumu.html" target="info">
+                        <span><img src="images/Avatar/amumu-classic.png" alt="amumu"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Heros/annie.html" target="info">
+                        <span><img src="images/Avatar/annie-classic.png" alt="annie"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Heros/ashe.html" target="info">
+                        <span><img src="images/Avatar/ashe-classic.png" alt="ashe"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Heros/garen.html" target="info">
+                        <span><img src="images/Avatar/garen-classic.png" alt="garen"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Heros/karthus.html" target="info">
+                        <span><img src="images/Avatar/karthus-classic.png" alt="karthus"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Heros/ryze.html" target="info">
+                        <span><img src="images/Avatar/ryze-classic.png" alt="ryze"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Heros/singed.html" target="info">
+                        <span><img src="images/Avatar/singed-classic.png" alt="singed"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Heros/sivir.html" target="info">
+                        <span><img src="images/Avatar/sivir-classic.png" alt="sivir"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Container of Heros Infomation(iframe to display)-->
+    <div class="container_heroInfo">
+        <iframe name="info" scrolling="no">
+            
+        </iframe>
+    </div>
+    <!--Container of Bottom Items-->
+    <div class="bottom">
+        <div class="container_social">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/leagueoflegends/">
+                        <span></span><!--For 3D Hover Effect(Layer1)-->
+                        <span></span><!--For 3D Hover Effect(Layer2)-->
+                        <span></span><!--For 3D Hover Effect(Layer3)-->
+                        <span></span><!--For 3D Hover Effect(Layer4)-->
+                        <span class="fa fa-facebook"></span><!--For 3D Hover Effect(Layer5)-->
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/leagueoflegends">
+                        <span></span><!--For 3D Hover Effect(Layer1)-->
+                        <span></span><!--For 3D Hover Effect(Layer2)-->
+                        <span></span><!--For 3D Hover Effect(Layer3)-->
+                        <span></span><!--For 3D Hover Effect(Layer4)-->
+                        <span class="fa fa-twitter"></span><!--For 3D Hover Effect(Layer5)-->
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC2t5bjwHdUX4vM2g8TRDq5g">
+                        <span></span><!--For 3D Hover Effect(Layer1)-->
+                        <span></span><!--For 3D Hover Effect(Layer2)-->
+                        <span></span><!--For 3D Hover Effect(Layer3)-->
+                        <span></span><!--For 3D Hover Effect(Layer4)-->
+                        <span class="fa fa-youtube"></span><!--For 3D Hover Effect(Layer5)-->
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="logo_bot">
+            <img src="images/logo.png">
+        </div>
+    </div>
+</body>
+<script>
+    var hide = true;
+    var frame = document.getElementById("menu_bar");
+    function smallbar(){
+        if(hide){
+            frame.style.display="block";
+            hide=false;
+        }else{
+            frame.style.display="none";
+            hide = true;
+        }
+    }
+    function switchSize(x) {
+      if (size.matches) { // If media query matches
+        frame.style.display="none";
+        hide=true;
+      }else {
+        frame.style.display="block";
+        hide=false;
+      }
+    }
+    var size = window.matchMedia("(max-width: 450px)");
+    switchSize(size); // Call listener function at run time
+    size.addListener(switchSize); // Attach listener function on state changes
+    
+    window.addEventListener('scroll', function(){
+        menuBar();
+        switchSize(size);
+    });//while scrolling the window, it will call sticky bar function
+    var stickyBar = document.getElementById("header");
+    var sticky = stickyBar.offsetTop;
+    function menuBar(){//set the menu bar to be a sticky bar
+        if(window.pageYOffset > sticky){stickyBar.classList.add("sticky");}
+        else{stickyBar.classList.remove("sticky");}
+    }
+    toImage();//set the search button to icon side
+    /*
+    The above functions is use for sticky menu bar.
+    When user scrolling the windows, window.onscroll will check that whether menu_bar is arrive the toppest position of clientY.
+    After that, it will add a class call "sticky", so that we can set the position of menu_bar to be "sticky" in css.
+    */
+    
+    function toSearch(){//switch icon side to search side
+        document.getElementById("searchField").style.display = "block";
+        document.getElementById("searchPic").style.display = "none";
+    }
+    function toImage(){//switch search side to icon side
+        document.getElementById("searchField").style.display = "none";
+        document.getElementById("searchPic").style.display = "block";
+    }
+    /*
+    The above functions is use for switch the search bar of input side or image side 
+    */
+</script>
+</html>

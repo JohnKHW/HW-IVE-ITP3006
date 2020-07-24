@@ -1,0 +1,21 @@
+//This file is use for load the custom font
+@font-face{
+    font-family: Chalisa Octavia;
+    src: url('../font/Chalisa_Octavia.otf');
+}
+@font-face{
+    font-family: NORTHEN;
+    src: url('../font/NORTHEN.ttf');
+}
+@font-face{
+    font-family: SpaceAge;
+    src: url('../font/space age.ttf');
+}
+@font-face{
+    font-family: CloisterBlack;
+    src: url('../font/CloisterBlack.ttf');
+}
+@font-face{
+    font-family: Awesome Season;
+    src: url('../font/Awesome Season.ttf');
+}

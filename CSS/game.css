@@ -1,0 +1,18 @@
+.container_requirement h1{
+    position: relative;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.container_requirement table{
+    position: relative;
+    margin: auto;
+}
+.container_requirement table.requirent{
+    text-align: center;
+    
+}
+.container_requirement table.requirent td{
+    border: 1px solid black;
+    padding: 10px;
+}

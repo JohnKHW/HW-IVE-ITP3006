@@ -1,0 +1,326 @@
+/*This file is use to set the menu bar style for all html*/
+body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    z-index: 100;
+}
+#menu_bar{
+    z-index: 3;
+    overflow: hidden;
+    width: 100%;
+    background-color: darkslategrey;
+    user-select: none;
+}
+#menu_bar span{
+    width: 0;
+    font-size: 20pt;
+}
+#menu_bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 2px red;
+    /*It makes the sub title to be vertical display*/
+    display: inline-block;
+    z-index: 100;
+    width: 150px;
+}
+#menu_bar ul a{
+    /*It makes the item align center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    line-height: 1.2em;
+    width: 150px;
+    display: block;
+}
+#menu_bar ul li a:hover{
+    background-color: black;
+    opacity: 0.5;
+    color: yellow;
+}
+#menu_bar ul li .sub{
+    position: fixed;
+    margin: 0;
+    background-color: black;
+    opacity: 0.8;
+    width: auto;
+}
+#menu_bar ul li .sub li{
+    overflow: hidden;
+    height: 0;
+    transition: 500ms;
+}
+#menu_bar ul li:hover .sub li{
+    height: 40px;
+    transition: height 0.5s;
+}
+#menu_bar ul li .sub li a:hover{
+    background-color: grey;
+    opacity: 1;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 0%;
+}
+
+.sticky + .body{
+    padding-top: 60px;
+}
+
+
+#search, #searchPic, #searchField{
+    /*If is not float right, it will at right hand side of next row*/
+    float: right;
+    height: 39px;
+    display: block;
+}
+#searchPic{
+    margin: 0 50px;
+}
+#searchField{
+    margin: 0 10px;
+    width: 120px;
+    background-color: transparent;
+    color: #E5BD00;
+    display: none;
+}
+#searchField::placeholder {
+    color: #E5BD00;
+    text-align: center;
+}
+#search:hover{
+    background-color: #146799;
+    border-radius: 10px;
+    width: 140px;
+}
+
+
+#small_header{
+    display: none;
+    background: black;
+}
+#small_header img{
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#small_header span{
+    position: relative;
+    color: white;
+    font-size: 30pt;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+.bottom{
+    
+}
+.bottom .container_social {
+    position: relative;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.bottom .container_social ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.bottom .container_social ul li{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform: rotate(-30deg) skew(23deg);
+}
+.bottom .container_social ul li span{
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+.bottom .container_social ul li:hover span{
+    text-shadow: -10px 10px 2px black;
+    box-shadow: -4px 4px 5px black;
+    font-size: 40px;
+    
+}
+/*let the button being stereoscopic*/
+.bottom .container_social ul li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+.bottom .container_social ul li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+.bottom .container_social ul li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+.bottom .container_social ul li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+.bottom .container_social ul li:hover span:nth-child(1){
+    transform: translate(0, 0);
+    opacity: 0.4;
+}
+.bottom .container_social ul li:hover:nth-child(1) span{
+    background: #3B5998;
+}
+.bottom .container_social ul li:hover:nth-child(2) span{
+    background: #55ACEE;
+}
+.bottom .container_social ul li:hover:nth-child(3) span{
+    background: #bb0000;
+}
+.bottom .logo_bot{
+    width: 300px;
+    position: relative;
+    margin: auto;
+}
+.bottom .logo_bot img{
+    width: 100%;
+}
+
+@media only screen and (max-width:1000px){
+    #menu_bar ul,
+    #menu_bar ul a{
+        width: 110px;
+    }
+    #searchPic{
+        margin: 0 40px;
+    }
+    #searchField{
+        width: 100px;
+    }
+    #search:hover{
+        width: 120px;
+    }
+}
+@media only screen and (max-width:770px){
+    #menu_bar ul,
+    #menu_bar ul a{
+        width: 95px;
+    }
+    #searchPic{
+        margin: 0 30px;
+    }
+    #searchField{
+        width: 80px;
+    }
+    #search:hover{
+        width: 100px;
+    }
+}
+@media only screen and (max-width:656px) {
+    #menu_bar ul,
+    #menu_bar ul a{
+        width: 85px;
+    }
+    #searchPic{
+        margin: 0 25px;
+    }
+    #searchField{
+        width: 70px;
+    }
+    #search:hover{
+        width: 90px;
+    }
+}
+@media only screen and (max-width:600px) {
+    #menu_bar ul,
+    #menu_bar ul a{
+        width: 80px;
+    }
+    #searchPic{
+        margin: 0 20px;
+    }
+    #searchField{
+        margin: 0 10px;
+        width: 60px;
+    }
+    #search:hover{
+        width: 80px;
+    }
+}
+@media only screen and (max-width:550px) {
+    #menu_bar ul,
+    #menu_bar ul a{
+        
+    }
+}
+@media only screen and (max-width:450px) {
+    #small_header{
+        display: block;
+    }
+    #menu_bar{
+        position: absolute;
+        width: 50%;
+        height: 100vh;
+        z-index: 100;
+        background-color: darkslategrey;
+        opacity: 0.8;
+        transition: display 5s;
+    }
+    #menu_bar ul{
+        display: block;
+        width: 100%;
+    }
+    #menu_bar ul a{
+        width: 100%;
+    }
+    #menu_bar ul li .sub{
+        position: relative;
+        background-color: darkslategrey;
+        opacity: 1;
+    }
+    #menu_bar ul li .sub li,
+    #menu_bar ul li:hover .sub li{
+        height: 100%;
+    }
+    #search, #searchPic, #searchField{
+        display: none;
+    }
+    
+    
+    .bottom .container_social ul li{
+        width:40px;
+        height: 40px;
+    }
+    .bottom .container_social ul li span{
+        font-size: 20pt;
+    }
+    .bottom .container_social ul li:hover span{
+        font-size: 25pt;
+    }
+    .bottom .logo_bot{
+        width: 250px;
+    }
+}

@@ -1,0 +1,125 @@
+/*This is a css for each heros frame style*/
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed !important;
+    height: 100vh;
+}
+.container_info{
+    
+}
+.container_info .details .description{
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-family: CloisterBlack;
+    font-size: 20pt;
+    text-shadow: 0px 0px 8px black;
+}
+.container_info .details .description h2{
+    font-family: SpaceAge;
+}
+.container_info .details .parameter{
+    color: white;
+    z-index: 2;
+    margin-top: 20px;
+}
+.container_info .details .parameter div{
+    margin: 10px 0;
+}
+.container_info .details .parameter span{
+    position: relative;
+    display:table;
+    text-align: right;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    font-size: 10pt;
+}
+.container_info .details .parameter span.name{
+    text-transform: uppercase;
+    font-family: NORTHEN;
+    color: black;
+    font-size: 12pt;
+    text-shadow: 0px 0px 3px white;
+}
+
+.container_info .details,
+.container_descript .video,
+.container_descript .skillBar{
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 3px 15px black;
+    overflow: hidden;
+    color: #000;
+}
+.container_info .details:before,
+.container_descript .video:before,
+.container_descript .skillBar:before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-attachment: fixed !important;
+    filter: blur(5px);
+}
+.container_descript .video iframe{
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: -3px 3px 3px grey;
+}
+.container_descript .video iframe,
+.container_descript .skillBar div{
+    position: relative;
+}
+.container_descript .skillBar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container_descript .skillBar .icon{
+    float: left;
+    margin-right: 10px;
+}
+.container_descript .skillBar .icon img{
+    box-shadow: -1px 1px 1px white;
+}
+.container_descript .skillBar .details span{
+    position: relative;
+    display:table;
+    font-family: NORTHEN;
+}
+.container_descript .skillBar .details span.name{
+    font-size: 18pt;
+    color: black;
+    text-shadow: 0px 0px 3px white;
+}
+.container_descript .skillBar .details span.description{
+    font-size: 11pt;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+/*
+@media only screen and (max-width:1000px)
+@media only screen and (max-width:770px)
+@media only screen and (max-width:656px)
+*/
+@media only screen and (max-width:600px){
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        left: 0;
+    }
+    .container_info{
+        width: 100%;
+    }
+    .container_info .details{
+        margin: 0;
+    }
+    
+}
